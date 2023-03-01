@@ -1,5 +1,6 @@
 ﻿using BlazorSozluk.Api.Domain.Models;
 using BlazorSozluk.Infrastructure.Persistence.Context;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;

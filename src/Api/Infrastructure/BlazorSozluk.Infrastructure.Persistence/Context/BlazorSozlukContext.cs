@@ -40,7 +40,7 @@ namespace BlazorSozluk.Infrastructure.Persistence.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                var connStr = "Data Source=localhost;Initial Catalog=YoutubeBlazorsozluk;Persist Security Info=True;User ID=sa;Password=Salih123!";
+                var connStr = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BlazorSozlukDb;Integrated Security=True;";
                 optionsBuilder.UseSqlServer(connStr, opt =>
                 {
                     opt.EnableRetryOnFailure();
