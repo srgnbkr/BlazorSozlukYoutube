@@ -13,11 +13,11 @@ namespace BlazorSozluk.Common.Infrastructure.Exceptions
         {
         }
 
-        public DatabaseValidationException(string? message) : base(message)
+        public DatabaseValidationException(string message) : base(message)
         {
         }
 
-        public DatabaseValidationException(string? message, Exception? innerException) : base(message, innerException)
+        public DatabaseValidationException(string message, Exception innerException) : base(message, innerException)
         {
         }
 
