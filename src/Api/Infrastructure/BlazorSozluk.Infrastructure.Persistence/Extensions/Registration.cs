@@ -25,6 +25,7 @@ namespace BlazorSozluk.Infrastructure.Persistence.Extensions
                 });
             });
 
+            //Açık bırakırsak her defasında data ekler :))))
             //var seedData = new SeedData();
             //seedData.SeedAsync(configuration).GetAwaiter().GetResult();
 

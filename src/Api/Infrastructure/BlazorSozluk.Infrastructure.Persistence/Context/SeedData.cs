@@ -48,7 +48,7 @@ namespace BlazorSozluk.Infrastructure.Persistence.Context
 
             await context.Users.AddRangeAsync(users);
 
-            var guids = Enumerable.Range(0, 150).Select(i => Guid.NewGuid()).ToList();
+            var guids = Enumerable.Range(0, 200).Select(i => Guid.NewGuid()).ToList();
             int counter = 0;
 
             var entries = new Faker<Entry>("tr")
@@ -58,7 +58,7 @@ namespace BlazorSozluk.Infrastructure.Persistence.Context
                     .RuleFor(i => i.Subject, i => i.Lorem.Sentence(5, 5))
                     .RuleFor(i => i.Content, i => i.Lorem.Paragraph(2))
                     .RuleFor(i => i.CreatedById, i => i.PickRandom(userIds))
-                .Generate(150);
+                .Generate(200);
 
             await context.Entries.AddRangeAsync(entries);
 
